@@ -1,9 +1,6 @@
-The Fake Currency Detection System is an AI-powered solution that uses deep learning and computer vision to detect counterfeit banknotes in real-time. The project leverages TensorFlow, OpenCV, and Raspberry Pi to analyze key security features like watermarks, holograms, and microtext and classify currency as real or fake. The system consists of several components:  
+The Counterfeit Currency Detection System is an AI-powered solution that uses deep learning and computer vision to detect counterfeit Pakistani banknotes in real-time. The project leverages TensorFlow, OpenCV, and Raspberry Pi to analyze the colour density and sharpness and classify currency as real or fake. The system consists of several components:  
 
-1) Data Collection & Preprocessing: Capturing real and fake currency images, enhancing features using OpenCV, and applying data augmentation.
-2) Model Training: A Convolutional Neural Network (CNN) is trained on a custom dataset and optimized for low-power devices.
-3) Model Optimization for Raspberry Pi: The trained model is converted to TensorFlow Lite for fast inference.
-4) Real-Time Detection: The Raspberry Pi camera captures currency images, runs the AI model, and provides an instant classification result with a confidence score.
-5) User Interface & Feedback: The system outputs a simple "Real" or "Fake" result, with an optional LED or buzzer alert for counterfeit detection.
+A Convolutional Neural Network (CNN) model was developed and trained, achieving a notable 91% accuracy in classifying currency authenticity. Concurrently, a YOLOv8 model was deployed to accurately identify the denominations of Pakistani banknotes. Both models were hosted on Google Drive, enabling efficient and seamless updates. These models were integrated within a real-time detection framework powered by Raspberry Pi 5 hardware, utilizing Natural Language Processing (NLP) to audibly announce the detection results. A significant and unexpected outcome was the CNN model’s perfect generalization to accurately detect the authenticity of 5000 rupee notes without prior training on this denomination.
 
-The repository includes the Python code for image processing, model training, optimization, and deployment on Raspberry Pi.
+
+
